@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load webdesign %}
+{% block tophead %}
+{% endblock %}
+{% block extrahead %}
+{% endblock %}
+
+
+        {% block content %}
+            <h2>
+            list of layers
+            </h2>
+
+ {% for f in object_list  %}
+   name: <b>{{f.name}}</b><br>
+   status: {{f.status}}<br>
+   size: {{f.size}}<br><br><br>
+ {% endfor %}
+
+        {% endblock %}
